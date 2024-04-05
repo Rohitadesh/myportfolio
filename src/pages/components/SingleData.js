@@ -2,7 +2,7 @@
 import Image from 'next/image'
 import { IoMdClose } from "react-icons/io";
 const SingleData = ({setState,data,height,width}) =>{
-    // console.log(data[0].gallery)
+    // console.log(data[0].Description)
 
     return(
         <>
@@ -21,7 +21,7 @@ const SingleData = ({setState,data,height,width}) =>{
                     <div className='h-full w-full  flex justify-center items-center flex-wrap gap-1 
                   max-sm:row-span-3
                     '>
-                        { data[0] && data[0].gallery.map((e,i)=>{
+                        { data && data[0].gallery.map((e,i)=>{
     
                             return(
                                 <Image src={e} height={data[0].height} width={data[0].width} alt={i}  />
