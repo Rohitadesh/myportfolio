@@ -1,0 +1,7 @@
+ {
+                navBar.map((e,i)=>{
+                    return(
+                        <Link href={`${e.path}`} >{e.place}</Link>
+                    )
+                })
+               }
