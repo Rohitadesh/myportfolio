@@ -18,6 +18,9 @@ import rock1 from '../../public/rock1.png'
 import fullstack from '../../public/fullstack.png'
 // import {Data} from "./data"
 // import {personal} from './Personal'
+import AOS from 'aos';
+import { useEffect } from "react";
+import 'aos/dist/aos.css';
 import SingleData    from "./components/SingleData"
 const Project = ( ) =>{
         // const [personalId,setPersonalId]=useState(0)
@@ -26,12 +29,21 @@ const Project = ( ) =>{
          console.log(Id,"prop id")
          let d =  Data.filter(e=>e.id==Id)
          console.log(d)
+           useEffect(()=>{
+
+        console.log(AOS);
+        AOS.init({
+            duration:3000
+        });
+        AOS.refresh();
+    },[])
         //  let p = Personal.filter(e=>e.id==personalId)
     return(
         <div className=" w-full  flex flex-col justify-center items-center gap-8 ">
             <h1 className="p-2 text-black text-2xl ">Project</h1>
            {/* <div className="flex flex-col  justify-center   justify-center items-center border border-black gap-12 py-6"> */}
-                <div className="grid grid-cols-3 flex gap-6 max-sm:grid-cols-1 max-sm:grid-row-3"  onClick={()=>setData(true)}>
+                <div data-aos="fade-up"
+     data-aos-anchor-placement="top-bottom"  className="grid grid-cols-3 flex gap-6 max-sm:grid-cols-1 max-sm:grid-row-3"  onClick={()=>setData(true)}>
                 {
                         Data.slice(0,3).map((e,i)=>{
                     
@@ -43,7 +55,8 @@ const Project = ( ) =>{
                     }
                 </div>
             <h1 className="p-2 text-black text-2xl ">Hobby Project</h1>
-                <div className="grid grid-cols-3 flex gap-12 py-6  md:max-lg:gap-4  max-sm:grid-cols-1 max-sm:grid-row-3" onClick={()=>setData(true)}>
+                <div data-aos="fade-up"
+     data-aos-anchor-placement="top-bottom"  className="grid grid-cols-3 flex gap-12 py-6  md:max-lg:gap-4  max-sm:grid-cols-1 max-sm:grid-row-3" onClick={()=>setData(true)}>
                 {
                         Data.slice(3,9).map((e,i)=>{
                     
@@ -85,7 +98,7 @@ const Project = ( ) =>{
 },
 {
     id:2,
-    title:'Ayuci',
+    title:'Ayuci Hospital ERP',
     tools:['Material UI','css','Go Language ','MYSQl','AWS'],
     gallery:[Login,doctor],
     short:'This is Our Client Produce.This Product is based on Hospital ERP and its a paperless documentation IPD , Wards , OPD , billing , Appointment Booking and Appointment Scheduling etc ...',
@@ -109,20 +122,22 @@ const Project = ( ) =>{
 {
     id:4,
     data:['React Js','Tailwindcss'],
-    title:'Weather app',
+    title:'Weather App',
     Description: 'This is my project is used to see Present day weather Condition . In This Project Tools are used to ReactJs , Tailwindcss and Open source Weather api .',
     short:'This is my project is used to see Present day weather Condition . In This Project Tools are used to ReactJs , Tailwindcss and Open source Weather api ...'
     ,gallery:[weather,weather1],
+    link:'https://react-weather-rho-five.vercel.app/',
     height:650,
     width:650
 },
 {
     id:5,
     data:['HTML','CSS','Javascript'],
-    title:'Rock paper sizer game',
+    title:'Rock Paper Scissor Game',
     Description:'This is Game which contain user and computer the three button contains stone paper cutter click any one of these  button from userside and which computer accept user challenge it plays on it .',
-    short:'This is Game which contain user and computer the three button contains stone paper cutter click any one of these  button from userside and which computer accept user challenge it plays on it .'
+    short:'This is Game which contain user and computer the three button contains stone paper cutter click any one of these  button from userside and which computer accept user challenge it plays on it ...'
     ,gallery:[rock,rock1],
+    link:'https://rockpaperscissors-delta.vercel.app/',
     height:650,
     width:650
 },
@@ -145,7 +160,8 @@ const Project = ( ) =>{
   short:'This is my frontend project in this project we can calculate the tip how many percentage and how many people with total amount ...' 
   ,gallery:[tip,tip1],
   height:650,
-    width:650
+    width:650,
+    link:'https://tipcalculator-ecru.vercel.app/'
  
 },
  {
@@ -155,6 +171,7 @@ const Project = ( ) =>{
     Description:'This is My First react project FAQ which has Some Static data Question and Answer .But is sample and learning purpose .',
     short:'This is My First react project FAQ which has Some Static data Question and Answer .But is sample and learning purpose ...',
     gallery:[faq,faq1],
+    link:'https://reactfaqporject-git-main-rohitadesh.vercel.app/',
     height:650,
     width:650
 } ,
@@ -166,7 +183,8 @@ const Project = ( ) =>{
     short:'This is  react project Stop Watch which has buttons to track seconds , hour , minutes . Project Features is Stop , Start and Reset ...',
     gallery:[stopwatch,start],
     height:650,
-    width:650
+    width:650,
+    link:'https://stopwatch-iota-one.vercel.app/'
  } 
 
 

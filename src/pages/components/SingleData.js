@@ -35,13 +35,13 @@ const SingleData = ({setState,data,height,width}) =>{
                         })}
                     </div>
                     <div className='h-full w-full p-2 flex flex-col gap-8 justify-center items-center max-sm:row-span-2   '>
-                        <h1 className='text-black text-center text-md sm:max-lg:text-sm'>
+                        <h1 className='text-black text-center text-md sm:max-lg:text-sm font-serif'>
                             {data[0].Description}
                         </h1>
                     {
                         data[0].link && <div className='p-2 border border-black rounded-md'>
-                            Link
-                            <Link href={`${data[0].link}`}></Link>
+                            
+                            <Link href={`${data[0].link}`}>Link</Link>
                         </div>
                     }
                     </div> 
