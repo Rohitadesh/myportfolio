@@ -3,13 +3,18 @@ import Image from 'next/image'
 import { IoMdClose } from "react-icons/io";
 const SingleData = ({setState,data,height,width}) =>{
     // console.log(data[0].Description)
+    
+
+
+
+
 
     return(
         <>
          { data &&
 
-            <div className="h-screen w-screen  bg-transparent flex flex-col justify-center items-center
-            ">
+            <div className="h-screen w-screen   flex flex-col justify-center items-center
+            bg-black/50">
                 <div className='rounded-full h-8 w-8   right-[17%]  absolute  z-[200] top-[18%] bg-white opacity-80
                 max-sm:relative max-sm:top-[2rem]    max-sm:left-[10.2rem]     max-sm:
                 sm:max-lg:top-[1rem] sm:max-lg:left-[22rem]  sm:max-lg:relative flex justify-center items-center' onClick={()=>setState(false)}>

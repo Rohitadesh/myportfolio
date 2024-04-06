@@ -8,7 +8,7 @@ const CompanyProject  = ({title,dataId,tools,description,setId}) =>{
     return(
         <>
         
-       <div   className="h-[18  rem] glass w-[25rem]   shadow-xl  
+       <div   className="h-[18rem] glass w-[25rem]   shadow-xl  hover:-translate-y-1 hover:scale-110
                     sm:max-lg:w-[14rem]  sm:max-lg:h-[25rem] max-sm:h-[25rem] max-sm:w-[20rem]
                         " onClick={(e)=>setId(e.target.id)} >
                 <div   className="w-full   h-[12rem] sm:max-lg:h-[14rem] flex flex-col justify-center items-center gap-6
