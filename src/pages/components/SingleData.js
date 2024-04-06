@@ -1,6 +1,7 @@
 // import HTMLFlipBook from 'react-pageflip';
 import Image from 'next/image'
 import { IoMdClose } from "react-icons/io";
+import Link from "next/link"
 const SingleData = ({setState,data,height,width}) =>{
     // console.log(data[0].Description)
     
@@ -15,8 +16,8 @@ const SingleData = ({setState,data,height,width}) =>{
 
             <div className="h-screen w-screen   flex flex-col justify-center items-center
             bg-black/50">
-                <div className='rounded-full h-8 w-8   right-[17%]  absolute  z-[200] top-[18%] bg-white opacity-80
-                max-sm:relative max-sm:top-[2rem]    max-sm:left-[10.2rem]     max-sm:
+                <div className='rounded-full h-8 w-8   right-[17%]  absolute  z-[200] top-[18%] bg-white opacity-80 rounded-md
+                max-sm:relative max-sm:top-[2rem]    max-sm:left-[10.2rem]     max-sm:rounded-md 
                 sm:max-lg:top-[1rem] sm:max-lg:left-[22rem]  sm:max-lg:relative flex justify-center items-center' onClick={()=>setState(false)}>
                     <IoMdClose />
                 </div>
@@ -29,16 +30,21 @@ const SingleData = ({setState,data,height,width}) =>{
                         { data && data[0].gallery.map((e,i)=>{
     
                             return(
-                                <Image src={e} height={data[0].height} width={data[0].width} alt={i}  />
+                                <Image src={e} height={data[0].height} width={data[0].width} alt={i}  priority />
                             )
                         })}
                     </div>
-                    <div className='h-full w-full p-2 flex justify-start items-center max-sm:row-span-2'>
+                    <div className='h-full w-full p-2 flex flex-col gap-8 justify-center items-center max-sm:row-span-2   '>
                         <h1 className='text-black text-center text-md sm:max-lg:text-sm'>
                             {data[0].Description}
                         </h1>
+                    {
+                        data[0].link && <div className='p-2 border border-black rounded-md'>
+                            Link
+                            <Link href={`${data[0].link}`}></Link>
+                        </div>
+                    }
                     </div> 
-    
                 </div>
             </div>
 
