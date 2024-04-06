@@ -13,7 +13,7 @@ const CompanyProject  = ({title,dataId,tools,description,setId}) =>{
                         " onClick={(e)=>setId(e.target.id)} >
                 <div   className="w-full   h-[12rem] sm:max-lg:h-[14rem] flex flex-col justify-center items-center gap-6
                  sm:max-lg:flex-col sm:max-lg:gap-4 sm:max-lg:justify-start max-sm:p-1 max-sm:h-[15rem] " >
-                <h1 className="text-black text-md  sm:max-lg:p-4   text-center ">{title}</h1>
+                <h1 className="text-black text-md  sm:max-lg:p-4   text-center  ">{title}</h1>
                     <h1 id={dataId} className="h-24 w-full text-black text-md text-clip  sm:max-lg:text-sm  text-center">{description}</h1>
                 </div>
                 <div className="h-[4rem] w-full rounded-md  sm:max-lg:h-[9rem] sm:max-lg:p-2 max-sm:h-[8rem]

@@ -26,7 +26,7 @@ const AboutMe = () =>{
 
                     <div className="h-24 w-24 glass flex flex-col justify-center items-center    rounded-full 
                     max-sm:h-18 max-sm:w-18 hover:-translate-y-1 hover:scale-110  ">
-                        <h1 className="text-black text-center ">About Me</h1>
+                        <h1 className="text-black text-center after:block after:content-[''] after:absolute after:h-[3px] after:bg-black after:w-[4.3rem] after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center">About Me</h1>
                     </div>
                     <div className="h-6 w-6 border  shadow-2xl bg-white rounded-full hover:animate-ping"></div>
                     <div className="h-6 w-6 border  shadow-2xl bg-white rounded-full hover:animate-ping"></div>
@@ -49,7 +49,7 @@ const AboutMe = () =>{
                 max-sm:w-[26rem] max-sm:h-[58rem] max-sm:flex   max-sm:flex-col   max-sm:justify-start 
                  sm:max-lg:w-full sm:max-lg:h-[28rem] ">
                     <div className="h-24 w-24 glass  flex flex-col justify-center items-center rounded-full hover:-translate-y-1 hover:scale-110 ">
-                        <h1 className="text-black text-center">Skills</h1>
+                        <h1 className="text-black text-center after:block after:content-[''] after:absolute after:h-[3px] after:bg-black after:w-[2.5rem] after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center">Skills</h1>
                     </div>
                     <div className="h-6 w-6   shadow-xl bg-white rounded-full"></div>
                     <div className="h-6 w-6   shadow-xl bg-white rounded-full"></div>
@@ -58,28 +58,28 @@ const AboutMe = () =>{
                         <div className="h-full w-full flex flex-row flex-wrap justify-center items-center gap-20 max-sm:p-2 sm:max-lg:gap-6">
                             <div className="h-20 w-20 glass bg-white flex flex-col justify-center items-center hover:-translate-y-1 hover:scale-110 ">
                                 <Image src={html} className="h-8 " alt="html" />
-                                <h1 className="text-black text-sm">
+                                <h1 className="text-black text-sm after:block after:content-[''] after:absolute after:h-[3px] after:bg-black after:w-[2.5rem] after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center">
                                     HTML
                                 </h1>
                             </div> 
                             <div className="h-20 w-20 glass bg-white  shadow-2xl shadow-black/60  flex flex-col justify-center items-center gap-2
                             hover:-translate-y-2 hover:scale-110 ">
                             <Image src={css} className="h-8 w-8" alt="css" />
-                            <h1 className="text-black text-md">
+                            <h1 className="text-black text-md after:block after:content-[''] after:absolute after:h-[3px] after:bg-black after:w-[1.5rem] after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center">
                                     css
                                 </h1>
                             </div> 
                             <div className="h-20 w-20 glass bg-white  shadow-2xl shadow-black/60  flex flex-col justify-center items-center gap-2 
                             hover:-translate-y-2 hover:scale-110 ">
                             <Image src={javascript} className="h-8 w-8" alt="css" />
-                            <h1 className="text-black text-sm">
+                            <h1 className="text-black text-sm after:block after:content-[''] after:absolute after:h-[3px] after:bg-black after:w-[4rem] after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center">
                                     Javascript
                                 </h1>
                             </div> 
                             <div className="h-20 w-20 rounded-xl bg-white flex flex-col justify-center items-center 
                             hover:-translate-y-2 hover:scale-110 ">
                             <Image src={node} className="h-12 w-12" alt="css" />
-                            <h1 className="text-black text-sm">
+                            <h1 className="text-black text-sm after:block after:content-[''] after:absolute after:h-[3px] after:bg-black after:w-[3rem] after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center" >
                                     Nodejs
                                 </h1>
                             
@@ -89,7 +89,7 @@ const AboutMe = () =>{
                             <div className="h-20 w-20 rounded-xl shadow-2xl shadow-black/60 bg-white flex flex-col justify-center items-center 
                             hover:-translate-y-2 hover:scale-110 ">
                             <Image src={expressJs} className="h-10 w-10" alt="css" />
-                                <h1 className="text-black text-sm">
+                                <h1 className="text-black text-sm after:block after:content-[''] after:absolute after:h-[3px] after:bg-black after:w-[4rem] after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center">
                                     expressJs
                                 </h1>
                                 
@@ -97,21 +97,21 @@ const AboutMe = () =>{
                             <div className="h-20 w-20 rounded-xl shadow-2xl shadow-black/60 bg-white flex flex-col justify-center items-center
                             hover:-translate-y-2 hover:scale-110 ">
                                 <Image src={react} className="" alt="css" />
-                                <h1 className="text-black text-sm">
+                                <h1 className="text-black text-sm after:block after:content-[''] after:absolute after:h-[3px] after:bg-black after:w-[2.9rem] after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center">
                                     ReactJs
                                 </h1>
                             </div> 
                             <div className="h-20 w-20 rounded-xl shadow-2xl shadow-black/60  bg-white flex flex-col justify-center items-center gap-3
                             hover:-translate-y-2 hover:scale-110 ">
                             <Image src={nextjs} className="h-3" alt="css" />
-                                <h1 className="text-black text-sm">
+                                <h1 className="text-black text-sm after:block after:content-[''] after:absolute after:h-[3px] after:bg-black after:w-[2.6rem] after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center">
                                     NextJs
                                 </h1>
                             </div> 
                             <div className="h-20 w-20 text-sm  rounded-xl shadow-2xl shadow-black/60 bg-white flex flex-col gap-1 justify-center items-center 
                             hover:-translate-y-2 hover:scale-110 ">
                                 <Image src={tailwindcss} className="h-8 w-8" alt="css" />
-                                <h1 className="text-black text-sm">
+                                <h1 className="text-black text-sm after:block after:content-[''] after:absolute after:h-[3px] after:bg-black after:w-[4.5rem] after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center">
                                     TailwindCss
                                 </h1>
                             </div> 
@@ -122,14 +122,14 @@ const AboutMe = () =>{
                             <div className="h-20 w-20 rounded-xl shadow-2xl shadow-black/60 bg-white flex flex-col justify-center items-center
                             hover:-translate-y-2 hover:scale-110 ">
                             <Image src={mysql} className="h-18 w-18" alt="css" />
-                                <h1 className="text-black text-sm">
+                                <h1 className="text-black text-sm after:block after:content-[''] after:absolute after:h-[3px] after:bg-black after:w-[2.5rem] after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center">
                                     MySql
                                 </h1>
                             </div> 
                             <div className="h-20 w-20 text-sm  rounded-xl shadow-2xl shadow-black/60 bg-white flex  flex-col     justify-center items-center 
                             hover:-translate-y-2 hover:scale-110 ">
                             <Image src={aws} className="h-12 w-12" alt="css" />
-                                <h1 className="text-black text-sm">
+                                <h1 className="text-black text-sm after:block after:content-[''] after:absolute after:h-[3px] after:bg-black after:w-[2rem] after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center">
                                     AWS
                                 </h1>
                             </div> 
