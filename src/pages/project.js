@@ -43,7 +43,7 @@ const Project = ( ) =>{
             <h1 className="p-2 text-black text-2xl ">Project</h1>
            {/* <div className="flex flex-col  justify-center   justify-center items-center border border-black gap-12 py-6"> */}
                 <div data-aos="fade-up"
-     data-aos-anchor-placement="top-bottom"  className="grid grid-cols-3 flex gap-6 max-sm:grid-cols-1 max-sm:grid-row-3"  onClick={()=>setData(true)}>
+ className="grid grid-cols-3 flex gap-6 max-sm:grid-cols-1 max-sm:grid-row-3"  onClick={()=>setData(true)}>
                 {
                         Data.slice(0,3).map((e,i)=>{
                     
@@ -55,8 +55,8 @@ const Project = ( ) =>{
                     }
                 </div>
             <h1 className="p-2 text-black text-2xl ">Hobby Project</h1>
-                <div data-aos="fade-up"
-     data-aos-anchor-placement="top-bottom"  className="grid grid-cols-3 flex gap-12 py-6  md:max-lg:gap-4  max-sm:grid-cols-1 max-sm:grid-row-3" onClick={()=>setData(true)}>
+                <div 
+     className="grid grid-cols-3 flex gap-12 py-6  md:max-lg:gap-4  max-sm:grid-cols-1 max-sm:grid-row-3" onClick={()=>setData(true)}>
                 {
                         Data.slice(3,9).map((e,i)=>{
                     

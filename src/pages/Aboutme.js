@@ -24,11 +24,11 @@ const AboutMe = () =>{
         AOS.refresh();
     },[])
     return( 
-        <div className=" gap-2 flex flex-row flex-wrap justify-center items-center      ">
+        <div data-aos="fade-right"  className=" gap-2 flex flex-row flex-wrap justify-center items-center      ">
            
             <div className=" flex flex-col gap-6 justify-center items-center py-6   max-sm:py-12 ">
                 {/* main parent div of about me */}
-                <div data-aos="fade-right" className="h-[20rem] w-[80rem]  flex flex-row justify-center items-center gap-8 
+                <div className="h-[20rem] w-[80rem]  flex flex-row justify-center items-center gap-8 
                 
                 
                 max-sm:w-[24rem] max-sm:h-[34rem]  max-sm:flex max-sm:flex-col   sm:max-lg:w-full sm:max-lg:h-[24rem]">
@@ -53,7 +53,7 @@ const AboutMe = () =>{
                     </h1>  
                     </div>
                 </div>
-                <div  data-aos="fade-up" className="h-[18rem] w-[80rem] flex flex-row justify-end items-center gap-8 
+                <div  className="h-[18rem] w-[80rem] flex flex-row justify-end items-center gap-8 
                 
                 max-sm:w-[26rem] max-sm:h-[58rem] max-sm:flex   max-sm:flex-col   max-sm:justify-start 
                  sm:max-lg:w-full sm:max-lg:h-[28rem] ">
