@@ -26,8 +26,8 @@ export default function Home() {
     <main className="h-[36.7rem] w-full   flex flex-col justify-center items-center">
         <div data-aos="fade-down-left" className="max-sm:h-[30rem] max-sm:py-2 grid  grid-cols-2  h-[60%]   max-sm:grid-rows-2 max-sm:grid-cols-1 glass w-[45rem] border border-orange-500 max-[640px]:w-[90%]">
         <div className="h-full w-full  min-sm:col-span-1 max-sm:row-span-1  flex flex-col justify-center items-center">
-            <div className="border border-gray-400 bg-gray-4  00 rounded-full ">
-              <Image src={no} height={300} width={300} alt="data" priority /> 
+            <div className="rounded-full border border-black ">
+              <Image src={no} height={300} width={300} className="max-sm:h-52 max-sm:w-52 " alt="data" priority /> 
 
             </div>
           

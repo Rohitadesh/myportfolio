@@ -39,10 +39,10 @@ const Project = ( ) =>{
     },[])
         //  let p = Personal.filter(e=>e.id==personalId)
     return(
-        <div className=" w-full  flex flex-col justify-center items-center gap-8 ">
+        <div data-aos="fade-up" className=" w-full  flex flex-col justify-center items-center gap-8 ">
             <h1 className="p-2 text-black text-2xl ">Project</h1>
            {/* <div className="flex flex-col  justify-center   justify-center items-center border border-black gap-12 py-6"> */}
-                <div data-aos="fade-up"
+                <div 
  className="grid grid-cols-3 flex gap-6 max-sm:grid-cols-1 max-sm:grid-row-3"  onClick={()=>setData(true)}>
                 {
                         Data.slice(0,3).map((e,i)=>{
