@@ -9,7 +9,7 @@ const Navbar = ({children}) =>{
     // const Link=["Aboutme"]
     const size =[16,12,8,4]
     return(
-        <div className="overflow-auto h-screen w-screen ">
+        <div className="overflow-auto h-screen w-screen border border-green-600">
             <div className="max-[640px]:w-full max-sm:h-[6rem] h-[8rem] sm:w-full w-full flex flex-col justify-center items-center">
                 <div className="  max-[640px]:w-[90%] max-[640px]:h-[60%] lg:w-[30%] bg-[#426369] grid grid-cols-3  glass rounded-md  lg:h-[50%] 
                 sm:max-lg:w-[24rem] sm:max-lg:h-[4rem] "> 
