@@ -8,8 +8,8 @@ const CompanyProject  = ({title,dataId,tools,description,setId}) =>{
     return(
         <>
         
-       <div   className="h-[16rem] glass w-[25rem]   shadow-xl  
-                    sm:max-lg:w-[14rem]  sm:max-lg:h-[23rem] max-sm:h-[23rem] max-sm:w-[20rem]
+       <div   className="h-[18  rem] glass w-[25rem]   shadow-xl  
+                    sm:max-lg:w-[14rem]  sm:max-lg:h-[25rem] max-sm:h-[25rem] max-sm:w-[20rem]
                         " onClick={(e)=>setId(e.target.id)} >
                 <div   className="w-full   h-[12rem] sm:max-lg:h-[14rem] flex flex-col justify-center items-center gap-6
                  sm:max-lg:flex-col sm:max-lg:gap-4 sm:max-lg:justify-start max-sm:p-1 max-sm:h-[15rem] " >

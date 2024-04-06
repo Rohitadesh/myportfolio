@@ -72,7 +72,7 @@ const Project = ( ) =>{
  const Data =[{
     id:1,
     title:'MyBioBackup',
-    tools:["ReactJs","Mysql","ExpressJS" ,"TailWindCss"],
+    tools:["ReactJs","Mysql","ExpressJS" ,"TailWindCss","AWS"],
     short:"This is Our Client Product . This Product is based on storing the medical documents . This software feature such as scan reports , prescription and Lab reports and we can search doctor and scanCenter ... ",
     Description:"This is Our Client Product . This Product is based on storing the medical documents . This software feature such as scan reports , prescription and Lab reports and we can search doctor and scanCenter  .There is special feature called Medicine reminder u can store many number of days and messages will be alerted. My role was ReactJS  , Mysql ,ExpressJS      AWS , Tailwindcss",
     gallery:[calender.src,dashboard.src],
@@ -85,10 +85,10 @@ const Project = ( ) =>{
 {
     id:2,
     title:'Ayuci',
-    tools:['Material UI','css','Go Language ','MYSQl'],
+    tools:['Material UI','css','Go Language ','MYSQl','AWS'],
     gallery:[Login,doctor],
-    short:'This is Our Client Produce.This Product is based on Hospital Managament System and its a paperless documentation IPD , Wards , OPD , billing , Appointment Booking and Appointment Scheduling etc ...',
-    Description:'"This is Our Client Produce.This Product is based on Hospital Managament System and its a paperless documentation . This Software feature such as IPD,Wards,OPD,billing,Appointment Booking,Appointment Scheduling etc. My role was in frontend developer"',
+    short:'This is Our Client Produce.This Product is based on Hospital ERP and its a paperless documentation IPD , Wards , OPD , billing , Appointment Booking and Appointment Scheduling etc ...',
+    Description:'"This is Our Client Produce.This Product is based on Hospital ERP and its a paperless documentation . This Software feature such as IPD,Wards,OPD,billing,Appointment Booking,Appointment Scheduling etc. My role was in frontend developer and AWS "',
     toolsDescription:"Material UI Template and useReactHookForms",
     height:650,
     width:650
