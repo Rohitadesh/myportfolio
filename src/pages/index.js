@@ -10,6 +10,7 @@ import { FcCallback } from "react-icons/fc";
 import AOS from 'aos';
 import { useEffect } from "react";
 import 'aos/dist/aos.css';
+import Link from "next/link"
 export default function Home() {
   useEffect(()=>{
 
@@ -42,19 +43,25 @@ export default function Home() {
           </h1>
           
           <div className="flex flex-row  justify-center item-center gap-4">
-            <h1 className="lg:text-4xl  max-[640px]:text-2xl  hover:animate-bounce">
-              📧 
+            <h1  className="p-2">
+            
+              <a href="mailto:adeshnagalikar2000@gmail.com" className="lg:text-4xl  max-[640px]:text-2xl  hover:animate-bounce sm:max-lg:text-3xl">
+                  📧 
+              </a>
 
             </h1>
-            <h1 className="text-4xl hover:animate-bounce  max-[640px]:text-2xl ">
+            <h1 className="p-2 flex flex-col justify-center items-center" >
+              
+            <Link href="https://github.com/Rohitadesh" className="text-4xl hover:animate-bounce  max-[640px]:text-2xl ">
               <FaGithub />
+              </Link>
             </h1>
-            <h1 className="lg:text-4xl hover:animate-bounce  max-[640px]:text-2xl ">
+            <h1 className="p-2  flex flex-col justify-center items-center">
+            <Link href="https://www.linkedin.com/in/adeshkumar-nagalikar-b145b3219/" className="lg:text-4xl hover:animate-bounce  max-[640px]:text-2xl  sm:max-lg:text-3xl ">
               <FaLinkedin />
+            </Link>
             </h1>
-            <h1 className="lg:text-4xl hover:animate-bounce  max-[640px]:text-2xl" >
-              <FcCallback /> 
-            </h1>
+       
             
             
           </div>
