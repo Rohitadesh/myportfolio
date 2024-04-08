@@ -30,7 +30,7 @@ const SingleData = ({setState,data,height,width}) =>{
                         { data && data[0].gallery.map((e,i)=>{
     
                             return(
-                                <Image src={e} height={data[0].height} width={data[0].width} alt={i}  priority />
+                                <Image src={e} height={data[0].height} width={data[0].width} alt={i} loading='lazy' />
                             )
                         })}
                     </div>
